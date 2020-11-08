@@ -727,10 +727,16 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 768px) {
   .features-wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -963,10 +969,16 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 768px) {
   .team .team-wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -985,17 +997,20 @@ svg {
   -webkit-box-shadow: 0 2px 3px #afb1b8;
           box-shadow: 0 2px 3px #afb1b8;
   margin-bottom: 30px;
+  width: 450px;
 }
 
 @media screen and (min-width: 768px) {
   .team .team-item {
     margin: 15px;
+    width: 354px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team .team-item {
     padding-bottom: 30px;
+    width: 270px;
   }
 }
 
