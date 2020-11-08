@@ -1,0 +1,109 @@
+.portfolio-table {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
+
+  & li {
+    margin-bottom: 30px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+      margin: 15px;
+    }
+  }
+
+  & li:hover,
+  & li a:focus {
+    box-shadow: 2px 2px 5px $color-white-gray;
+  }
+
+  .position-wrap {
+    position: relative;
+    overflow: hidden;
+  }
+  .description {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 450px;
+    height: 294px;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    opacity: 0;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+    }
+  }
+
+  .description p {
+    color: $color-white;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    padding: 63px 24px;
+  }
+
+  & li a:hover .position-wrap .description,
+  & li a:focus .position-wrap .description {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .portfolio-table-item,
+  .portfolio-table-item img {
+    display: block;
+    width: 450px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+    }
+  }
+
+  .portfolio-table-item-text-blok {
+    padding: 20px 24px 20px 24px;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .portfolio-table-item-text-blok__title {
+    color: $color-black;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+  }
+
+  .portfolio-table-item-text-blok__text {
+    color: $color-gray;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    margin-top: 4px;
+  }
+}

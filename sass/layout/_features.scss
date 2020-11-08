@@ -1,0 +1,139 @@
+.features {
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+  }
+}
+
+.features-item {
+  width: 450px;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: start;
+    }
+  }
+  &__text {
+    color: $color-gray;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+  }
+}
+.image-1::before {
+  content: "";
+  display: block;
+  background-color: $color-blue-gray;
+  background-image: url(/images/svg/antenna-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px;
+  width: 450px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+
+.image-2::before {
+  content: "";
+  display: block;
+  background-color: $color-blue-gray;
+  background-image: url(/images/svg/clock-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px;
+  width: 450px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+
+.image-3::before {
+  content: "";
+  display: block;
+  background-color: $color-blue-gray;
+  background-image: url(/images/svg/diagram-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px;
+  width: 450px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+
+.image-4::before {
+  content: "";
+  display: block;
+  background-color: $color-blue-gray;
+  background-image: url(/images/svg/astronaut-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px;
+  width: 450px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}

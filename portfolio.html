@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Портфолио</title>
+	<link rel="stylesheet" href="./css/modern-normalize.css" />
+	<link rel="stylesheet" href="./css/portfolio.css" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+		rel="stylesheet" />
+</head>
+
+<body>
+	<header class="header">
+		<div class="container wrapper">
+			<a class="header-logo logo" href="./index.html">Web<span class="logo__black">Studio</span></a>
+
+
+
+			<div class="nav-wrapper " data-menu>
+				<nav class="header-nav">
+
+					<ul class="header-nav__list">
+						<li class="list-link ">
+							<a class="list-link_item list-link_item__static" href="/index.html">Студия</a>
+						</li>
+						<li class="list-link list-link_active-item">
+							<a class="list-link_item list-link_item__active" href="/portfolio.html">Портфолио</a>
+						</li>
+						<li class="list-link">
+							<a class="list-link_item list-link_item__static" href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<address>
+					<ul class="header-contacts">
+						<li class="header-contacts-link ">
+							<a class="header-contacts-link__item" href="mailto:info@devstudio.com">
+								<svg width="16" height="12">
+									<use href="./images/svg/sprite.svg#icon-mail"></use>
+								</svg>
+								<p>info@devstudio.com</p>
+							</a>
+						</li>
+						<li class="header-contacts-link ">
+							<a class="header-contacts-link__item" href="tel:+380961111111">
+								<svg width="10" height="16">
+									<use href="./images/svg/sprite.svg#icon-number"></use>
+								</svg>
+								<p>+38 096 111 11 11</p>
+							</a>
+						</li>
+					</ul>
+				</address>
+			</div>
+
+			<button class="menu-button" type="button" aria-expanded="false" data-menu-button>
+				<svg width="40" height="40">
+					<use class="open" href="./images/svg/sprite.svg#icon-menu"></use>
+					<use class="close" href="./images/svg/sprite.svg#icon-close"></use>
+				</svg>
+			</button>
+
+		</div>
+	</header>
+
+	<!--main-->
+
+	<main class="main">
+		<!--portfolio-->
+
+		<section class="portfolio">
+			<div class="container">
+				<ul class="portfolio-navigation">
+					<li class="portfolio-navigation__button">
+						<button type="button" class="button">Все</button>
+					</li>
+					<li class="portfolio-navigation__button">
+						<button type="button" class="button">Веб-сайты</button>
+					</li>
+					<li class="portfolio-navigation__button">
+						<button type="button" class="button">Приложения</button>
+					</li>
+					<li class="portfolio-navigation__button">
+						<button type="button" class="button">Дизайн</button>
+					</li>
+					<li class="portfolio-navigation__button">
+						<button type="button" class="button">Маркетинг</button>
+					</li>
+				</ul>
+
+				<ul class="portfolio-table">
+					<li>
+						<a href="#" class="portfolio-table-item">
+
+							<div class="position-wrap">
+								<picture>
+									<source media="(min-width:1200px)" srcset="./images/full/portfolio-img1.jpg ">
+									<source media="(min-width:768px)" srcset="./images/tab/img_tab1.jpg ">
+									<source media="(min-width:480px)" srcset="./images/mob/img_mob1.jpg ">
+									<img src="./images/mob/img_mob1.jpg" alt="Игорь Демьяненко"
+										class="portfolio-table-item__img" />
+								</picture>
+								<div class="description">
+									<p>Технокряк это современная площадка распространения коронавируса. Компании
+										используют эту
+										платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+								</div>
+							</div>
+							<div class="portfolio-table-item-text-blok">
+								<h2 class="portfolio-table-item-text-blok__title">
+									Технокряк
+								</h2>
+								<p class="portfolio-table-item-text-blok__text">Веб-сайт</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="portfolio-table-item">
+
+							<div class="position-wrap">
+								<picture>
+									<source media="(min-width:1200px)" srcset="./images/full/portfolio-img2.jpg ">
+									<source media="(min-width:768px)" srcset="./images/tab/img_tab2.jpg ">
+									<source media="(min-width:480px)" srcset="./images/mob/img_mob2.jpg">
+									<img src="./images/mob/img_mob2.jpg" alt="Игорь Демьяненко"
+										class="portfolio-table-item__img" />
+								</picture>
+								<div class="description">
+									<p>Технокряк это современная площадка распространения коронавируса. Компании
+										используют эту
+										платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+								</div>
+							</div>
+							<div class="portfolio-table-item-text-blok">
+								<h2 class="portfolio-table-item-text-blok__title">
+									Постер New Orlean vs Golden Star
+								</h2>
+								<p class="portfolio-table-item-text-blok__text">Дизайн</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="portfolio-table-item">
+
+							<div class="position-wrap">
+								<picture>
+									<source media="(min-width:1200px)" srcset="./images/full/portfolio-img3.jpg ">
+									<source media="(min-width:768px)" srcset="./images/tab/img_tab3.jpg ">
+									<source media="(min-width:480px)" srcset="./images/mob/img_mob3.jpg ">
+									<img src="./images/mob/img_mob3.jpg" alt="Игорь Демьяненко"
+										class="portfolio-table-item__img" />
+								</picture>
+								<div class="description">
+									<p>Технокряк это современная площадка распространения коронавируса. Компании
+										используют эту
+										платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+								</div>
+							</div>
+							<div class="portfolio-table-item-text-blok">
+								<h2 class="portfolio-table-item-text-blok__title">
+									Ресторан Seafood
+								</h2>
+								<p class="portfolio-table-item-text-blok__text">Приложение</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="portfolio-table-item">
+
+							<div class="position-wrap">
+								<picture>
+									<source media="(min-width:1200px)" srcset="./images/full/portfolio-img4.jpg ">
+									<source media="(min-width:768px)" srcset="./images/tab/img_tab4.jpg ">
+									<source media="(min-width:480px)" srcset="./images/mob/img_mob4.jpg ">
+									<img src="./images/mob/img_mob4.jpg" alt="Игорь Демьяненко"
+										class="portfolio-table-item__img" />
+								</picture>
+								<div class="description">
+									<p>Технокряк это современная площадка распространения коронавируса. Компании
+										используют эту
+										платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+								</div>
+							</div>
+							<div class="portfolio-table-item-text-blok">
+								<h2 class="portfolio-table-item-text-blok__title">
+									Проект Prime
+								</h2>
+								<p class="portfolio-table-item-text-blok__text">Маркетинг</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="portfolio-table-item">
+
+							<div class="position-wrap">
+								<picture>
+									<source media="(min-width:1200px)" srcset="./images/full/portfolio-img5.jpg ">
+									<source media="(min-width:768px)" srcset="./images/tab/img_tab5.jpg ">
+									<source media="(min-width:480px)" srcset="./images/mob/img_mob5.jpg ">
+									<img src="./images/mob/img_mob5.jpg" alt="Игорь Демьяненко"
+										class="portfolio-table-item__img" />
+								</picture>
+								<div class="description">
+									<p>Технокряк это современная площадка распространения коронавируса. Компании
+										используют эту
+										платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+								</div>
+							</div>
+							<div class="portfolio-table-item-text-blok">
+								<h2 class="portfolio-table-item-text-blok__title">
+									Проект Boxes
+								</h2>
+								<p class="portfolio-table-item-text-blok__text">Приложение</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="portfolio-table-item">
+
+							<div class="position-wrap">
+								<picture>
+									<source media="(min-width:1200px)" srcset="./images/full/portfolio-img6.jpg ">
+									<source media="(min-width:768px)" srcset="./images/tab/img_tab6.jpg ">
+									<source media="(min-width:480px)" srcset="./images/mob/img_mob6.jpg ">
+									<img src="./images/mob/img_mob6.jpg" alt="Игорь Демьяненко"
+										class="portfolio-table-item__img" />
+								</picture>
+								<div class="description">
+									<p>Технокряк это современная площадка распространения коронавируса. Компании
+										используют эту
+										платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+								</div>
+							</div>
+							<div class="portfolio-table-item-text-blok">
+								<h2 class="portfolio-table-item-text-blok__title">
+									Inspiration has no Borders
+								</h2>
+								<p class="portfolio-table-item-text-blok__text">Веб-сайт</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="portfolio-table-item">
+
+							<div class="position-wrap">
+								<picture>
+									<source media="(min-width:1200px)" srcset="./images/full/portfolio-img7.jpg ">
+									<source media="(min-width:768px)" srcset="./images/tab/img_tab7.jpg ">
+									<source media="(min-width:480px)" srcset="./images/mob/img_mob7.jpg ">
+									<img src="./images/mob/img_mob.jpg" alt="Игорь Демьяненко"
+										class="portfolio-table-item__img" />
+								</picture>
+								<div class="description">
+									<p>Технокряк это современная площадка распространения коронавируса. Компании
+										используют эту
+										платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+								</div>
+							</div>
+							<div class="portfolio-table-item-text-blok">
+								<h2 class="portfolio-table-item-text-blok__title">
+									Издание Limited Edition
+								</h2>
+								<p class="portfolio-table-item-text-blok__text">Дизайн</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="portfolio-table-item">
+
+							<div class="position-wrap">
+								<picture>
+									<source media="(min-width:1200px)" srcset="./images/full/portfolio-img8.jpg ">
+									<source media="(min-width:768px)" srcset="./images/tab/img_tab8.jpg ">
+									<source media="(min-width:480px)" srcset="./images/mob/img_mob8.jpg">
+									<img src="./images/mob/img_mob8.jpg" alt="Игорь Демьяненко"
+										class="portfolio-table-item__img" />
+								</picture>
+								<div class="description">
+									<p>Технокряк это современная площадка распространения коронавируса. Компании
+										используют эту
+										платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+								</div>
+							</div>
+							<div class="portfolio-table-item-text-blok">
+								<h2 class="portfolio-table-item-text-blok__title">
+									Проект LAB
+								</h2>
+								<p class="portfolio-table-item-text-blok__text">Маркетинг</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="portfolio-table-item">
+
+							<div class="position-wrap">
+								<picture>
+									<source media="(min-width:1200px)" srcset="./images/full/portfolio-img9.jpg ">
+									<source media="(min-width:768px)" srcset="./images/tab/img_tab9.jpg ">
+									<source media="(min-width:480px)" srcset="./images/mob/img_mob9.jpg ">
+									<img src="./images/mob/img_mob9.jpg" alt="Игорь Демьяненко"
+										class="portfolio-table-item__img" />
+								</picture>
+								<div class="description">
+									<p>Технокряк это современная площадка распространения коронавируса. Компании
+										используют эту
+										платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+								</div>
+							</div>
+							<div class="portfolio-table-item-text-blok">
+								<h2 class="portfolio-table-item-text-blok__title">
+									Growing Business
+								</h2>
+								<p class="portfolio-table-item-text-blok__text">Приложение</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!--/portfolio-->
+	</main>
+
+	<!--/main-->
+
+	<!--footer-->
+	<footer class="footer">
+		<div class="container footer-wrapper">
+			<div class="contact-wrapper">
+				<a class="footer-logo logo" href="./index.html">Web<span class="logo__white">Studio</span></a>
+				<address class="footer-address">
+					<ul class="footer-list">
+						<li>
+							<a class="footer-list__street" href="https://goo.gl/maps/oYZgJUXY3QhVkCRE7">г. Киев, пр-т
+								Леси Украинки, 26</a>
+						</li>
+						<li>
+							<a class="footer-list__contacts" href="mailto:info@devstudio.com">info@example.com</a>
+						</li>
+						<li>
+							<a class="footer-list__contacts" href="tel:+380961111111">+38 099 111 11 11</a>
+						</li>
+					</ul>
+				</address>
+			</div>
+			<div class="footer-social">
+				<p class="footer__text">присоединяйтесь</p>
+				<ul class="footer-social-list">
+					<li class="footer-social-list_item"><a href="#"><svg>
+								<use href="./images/svg/sprite.svg#icon-instagram-2"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="footer-social-list_item"><a href="#"><svg>
+								<use href="./images/svg/sprite.svg#icon-twitter-1"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="footer-social-list_item"><a href="#"><svg>
+								<use href="./images/svg/sprite.svg#icon-facebook-1"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="footer-social-list_item"><a href="#"><svg>
+								<use href="./images/svg/sprite.svg#icon-linkedin-1"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<form class="footer-form">
+				<label class="footer-label" for="footer-mail">Подпишитесь на рассылку</label>
+				<input class="footer-input" type="email" name="mail" id="footer-mail" placeholder="E-mail">
+				<button class="footer-button " type="submit">Подписаться</button>
+			</form>
+		</div>
+	</footer>
+	<!--/footer-->
+
+	<script src="./js/menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+.footer {
+  padding: 60px 0;
+  background-color: $color-night;
+
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .footer-logo {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .contact-wrapper {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+    }
+  }
+
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & li:not(:last-child) {
+      margin-bottom: 9px;
+    }
+
+    &__street {
+      color: $color-white;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      font-style: normal;
+    }
+
+    &__contacts {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  .footer__text {
+    color: $color-white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: start;
+    }
+  }
+
+  .footer-social-list {
+    display: flex;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 93px;
+    }
+  }
+
+  .footer-social {
+    margin-bottom: 60px;
+  }
+
+  .footer-social-list_item a {
+    display: block;
+    border-radius: 50%;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .footer-social-list_item a:hover,
+  .footer-social-list_item a:focus {
+    background-color: $color-blue;
+    fill: $color-white;
+  }
+
+  .footer-social ul li svg {
+    fill: $color-white;
+  }
+
+  .footer-social ul li:not(:last-child) {
+    margin-right: 10px;
+  }
+  .footer-social ul svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+  }
+
+  .footer-button {
+    position: relative;
+    color: $color-white;
+    background-color: $color-blue;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    padding: 10px 62px 10px 29px;
+    margin: 0;
+    border: 0px;
+    border-radius: 4px;
+    outline: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background-image: url(../images/svg/icon_send.svg);
+      background-size: contain;
+      margin-left: 10px;
+    }
+  }
+
+  .footer-input {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 450px;
+    background-color: $color-night;
+    color: &--color-white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    outline: none;
+
+    &::placeholder {
+      text-transform: none;
+      color: rgba(255, 255, 255, 0.6);
+      font-weight: normal;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 12px;
+      width: 358px;
+    }
+  }
+
+  .footer-label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: $color-white;
+  }
+}
