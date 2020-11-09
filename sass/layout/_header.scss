@@ -11,10 +11,6 @@
       align-items: center;
       padding-bottom: 0;
     }
-
-    @media screen and (min-width: 1200px) {
-      justify-content: space-between;
-    }
   }
 
   &-logo {
@@ -47,6 +43,11 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+      margin-left: 88px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 93px;
     }
 
     .header-nav {
@@ -60,7 +61,7 @@
       }
 
       @media screen and (min-width: 1200px) {
-        justify-content: space-between;
+        margin-right: 305px;
       }
 
       &__list {
@@ -71,14 +72,7 @@
 
         @media screen and (min-width: 768px) {
           flex-direction: row;
-          margin-left: 88px;
-          margin-left: 84px;
           padding-top: 0;
-        }
-
-        @media screen and (min-width: 1200px) {
-          margin-left: 93px;
-          margin-right: 0px;
         }
       }
 
@@ -147,6 +141,7 @@
 
       @media screen and (min-width: 768px) {
         padding: 21px 0;
+        align-items: flex-start;
       }
 
       @media screen and (min-width: 1200px) {
@@ -203,7 +198,7 @@
   .menu-button {
     position: absolute;
     top: 10px;
-    right: 15px;
+    right: 10px;
     outline: none;
     background-color: $color-white;
     border: 0;

@@ -1,6 +1,8 @@
 .portfolio-table {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
@@ -8,11 +10,9 @@
     margin: -15px;
   }
 
-  @media screen and (min-width: 1200px) {
-  }
-
   & li {
     margin-bottom: 30px;
+
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -34,7 +34,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 450px;
+    width: 100%;
     height: 294px;
     background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
@@ -42,6 +42,10 @@
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
 
     @media screen and (min-width: 768px) {
       width: 354px;
@@ -70,7 +74,11 @@
   .portfolio-table-item,
   .portfolio-table-item img {
     display: block;
-    width: 450px;
+    width: 100%;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
 
     @media screen and (min-width: 768px) {
       width: 354px;
