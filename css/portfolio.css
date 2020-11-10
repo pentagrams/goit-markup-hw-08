@@ -24,7 +24,6 @@ svg {
 }
 
 .container {
-  width: 100%;
   padding: 0 15px;
 }
 
@@ -496,7 +495,6 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -737,6 +735,7 @@ svg {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    width: 231px;
   }
 }
 
@@ -811,8 +810,6 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .footer .footer-social-list_item a {
@@ -865,6 +862,7 @@ svg {
 
 @media screen and (min-width: 1200px) {
   .footer .footer-form {
+    width: none;
     display: block;
     padding-top: 12px;
   }
@@ -944,6 +942,21 @@ svg {
   font-weight: normal;
 }
 
+@media screen and (min-width: 480px) {
+  .footer .footer-input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .footer-input {
+    text-align: start;
+    margin-right: 12px;
+    width: 358px;
+    margin-bottom: 0;
+  }
+}
+
 .footer .footer-label {
   display: block;
   font-weight: bold;
@@ -956,18 +969,9 @@ svg {
   text-align: center;
 }
 
-@media screen and (min-width: 480px) {
-  .footer .footer-label {
-    width: 450px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .footer .footer-label {
     text-align: start;
-    margin-right: 12px;
-    width: 358px;
-    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */

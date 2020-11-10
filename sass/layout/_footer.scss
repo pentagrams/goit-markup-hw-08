@@ -55,6 +55,7 @@
 
     @media screen and (min-width: 1200px) {
       align-items: flex-start;
+      width: 231px;
     }
 
     &__street {
@@ -112,7 +113,6 @@
 
   .footer-social-list {
     display: flex;
-    flex-wrap: wrap;
   }
 
   .footer-social-list_item a {
@@ -151,6 +151,7 @@
     justify-content: center;
 
     @media screen and (min-width: 1200px) {
+      width: none;
       display: block;
       padding-top: 12px;
     }
@@ -190,7 +191,6 @@
 
   .footer-input {
     width: 100%;
-
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -212,6 +212,17 @@
       color: rgba(255, 255, 255, 0.6);
       font-weight: normal;
     }
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+      margin-right: 12px;
+      width: 358px;
+      margin-bottom: 0;
+    }
   }
 
   .footer-label {
@@ -225,15 +236,8 @@
     color: $color-white;
     text-align: center;
 
-    @media screen and (min-width: 480px) {
-      width: 450px;
-    }
-
     @media screen and (min-width: 1200px) {
       text-align: start;
-      margin-right: 12px;
-      width: 358px;
-      margin-bottom: 0;
     }
   }
 }
