@@ -862,7 +862,6 @@ svg {
 
 @media screen and (min-width: 1200px) {
   .footer .footer-form {
-    width: none;
     display: block;
     padding-top: 12px;
   }
@@ -870,7 +869,7 @@ svg {
 
 .footer .footer-button {
   min-width: 200px;
-  font-size: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: calc(30 / 16);
   position: relative;

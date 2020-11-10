@@ -1023,6 +1023,7 @@ svg {
 }
 
 .team .team-item {
+  width: 100%;
   text-align: center;
   background-color: #ffffff;
   border-radius: 2px;
@@ -1030,12 +1031,6 @@ svg {
   -webkit-box-shadow: 0 2px 3px #afb1b8;
           box-shadow: 0 2px 3px #afb1b8;
   margin-bottom: 30px;
-  width: 100%;
-}
-
-.team .team-item_img {
-  display: block;
-  width: 100%;
 }
 
 @media screen and (min-width: 480px) {
@@ -1046,14 +1041,12 @@ svg {
 
 @media screen and (min-width: 768px) {
   .team .team-item_img {
-    margin: 15px;
     width: 354px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team .team-item_img {
-    padding-bottom: 30px;
     width: 270px;
   }
 }
@@ -1449,7 +1442,6 @@ svg {
 
 @media screen and (min-width: 1200px) {
   .footer .footer-form {
-    width: none;
     display: block;
     padding-top: 12px;
   }
@@ -1457,7 +1449,7 @@ svg {
 
 .footer .footer-button {
   min-width: 200px;
-  font-size: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: calc(30 / 16);
   position: relative;

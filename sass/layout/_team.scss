@@ -24,29 +24,24 @@
   }
 
   .team-item {
+    width: 100%;
     text-align: center;
     background-color: $color-white;
     border-radius: 2px;
     padding-bottom: 24px;
     box-shadow: 0 2px 3px $color-white-gray;
     margin-bottom: 30px;
-    width: 100%;
 
     &_img {
-      display: block;
-      width: 100%;
-
       @media screen and (min-width: 480px) {
         width: 450px;
       }
 
       @media screen and (min-width: 768px) {
-        margin: 15px;
         width: 354px;
       }
 
       @media screen and (min-width: 1200px) {
-        padding-bottom: 30px;
         width: 270px;
       }
     }
