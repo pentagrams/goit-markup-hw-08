@@ -101,7 +101,6 @@ svg {
 }
 
 .header .wrapper {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,6 +121,15 @@ svg {
             align-items: center;
     padding-bottom: 0;
   }
+}
+
+.header .header-logo-menu__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header-logo {
@@ -547,6 +555,7 @@ svg {
 @media screen and (min-width: 480px) {
   .portfolio-table .description {
     width: 450px;
+    height: 294px;
   }
 }
 
@@ -838,6 +847,7 @@ svg {
 }
 
 .footer .footer-form {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -861,11 +871,13 @@ svg {
 }
 
 .footer .footer-button {
+  min-width: 200px;
+  font-size: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: calc(30 / 16);
   position: relative;
   color: #ffffff;
   background-color: #2196f3;
-  font-size: 16px;
-  line-height: 30px;
   font-weight: 700;
   padding: 10px 62px 10px 29px;
   margin: 0;
@@ -889,6 +901,7 @@ svg {
 }
 
 .footer .footer-input {
+  width: 100%;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -931,20 +944,6 @@ svg {
   font-weight: normal;
 }
 
-@media screen and (min-width: 480px) {
-  .footer .footer-input {
-    width: 450px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer .footer-input {
-    margin-right: 12px;
-    width: 358px;
-    margin-bottom: 0;
-  }
-}
-
 .footer .footer-label {
   display: block;
   font-weight: bold;
@@ -957,9 +956,18 @@ svg {
   text-align: center;
 }
 
+@media screen and (min-width: 480px) {
+  .footer .footer-label {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer .footer-label {
     text-align: start;
+    margin-right: 12px;
+    width: 358px;
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */

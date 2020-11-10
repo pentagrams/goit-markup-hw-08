@@ -15,7 +15,17 @@
 <body>
 	<header class="header">
 		<div class="container wrapper">
-			<a class="header-logo logo" href="./index.html">Web<span class="logo__black">Studio</span></a>
+
+			<div class="header-logo-menu__button">
+				<a class="header-logo logo" href="./index.html">Web<span class="logo__black">Studio</span></a>
+				<button class="menu-button" type="button" aria-expanded="false" data-menu-button>
+					<svg width="40" height="40">
+						<use class="open" href="./images/svg/sprite.svg#icon-menu"></use>
+						<use class="close" href="./images/svg/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+
 
 
 
@@ -56,12 +66,7 @@
 				</address>
 			</div>
 
-			<button class="menu-button" type="button" aria-expanded="false" data-menu-button>
-				<svg width="40" height="40">
-					<use class="open" href="./images/svg/sprite.svg#icon-menu"></use>
-					<use class="close" href="./images/svg/sprite.svg#icon-close"></use>
-				</svg>
-			</button>
+
 
 		</div>
 	</header>
@@ -364,8 +369,11 @@
 			</div>
 
 			<form class="footer-form">
-				<label class="footer-label" for="footer-mail">Подпишитесь на рассылку</label>
-				<input class="footer-input" type="email" name="mail" id="footer-mail" placeholder="E-mail">
+				<label class="footer-label" for="footer-mail">Подпишитесь на рассылку
+
+					<input class="footer-input" type="email" name="mail" id="footer-mail" placeholder="E-mail">
+				</label>
+
 				<button class="footer-button " type="submit">Подписаться</button>
 			</form>
 		</div>

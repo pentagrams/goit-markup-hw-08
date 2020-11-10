@@ -2,7 +2,6 @@
   background-color: $color-white;
 
   .wrapper {
-    position: relative;
     display: flex;
     flex-direction: column;
 
@@ -11,6 +10,11 @@
       align-items: center;
       padding-bottom: 0;
     }
+  }
+
+  .header-logo-menu__button {
+    display: flex;
+    justify-content: space-between;
   }
 
   &-logo {
